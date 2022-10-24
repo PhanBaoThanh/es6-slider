@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  background-color: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+}
+
+.App {
+  width: 90%;
+  margin: 80px auto;
+
+  .container{
+    .header{
+      text-align: center;
+      font-size: 38px;
+      color: #0f172a;
+      margin-bottom: 32px;
+      margin-bottom: 64px;
+      span{
+        color: hsl(205, 78%, 60%);
+      }
+    }
+
+    .box{
+      width: 70vw;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: max-content;
+
+      .btn{
+        padding: 5px 8px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: hsl(210, 22%, 49%);
+      }
+
+      .content{
+        width: 60vw;
+        overflow: hidden;
+        .contentBox{
+          display: flex;
+          transition: .4s;
+          .contentItem{
+            width: 100%;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            letter-spacing: 4px;
+            color: hsl(210, 22%, 49%);
+  
+            .img{
+              img{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                padding: 4px;
+                border: 1px solid hsl(211, 27%, 70%);
+                object-fit: cover;
+              }
+              margin-bottom: 8px;
+            }
+  
+            .name{
+              color: hsl(205, 78%, 60%);
+              margin-bottom: 8px;
+            }
+  
+            .position{
+              letter-spacing: 2px;
+              margin-bottom: 16px;
+            }
+  
+            .description{
+              letter-spacing: 1px;
+              text-align: center;
+              margin-bottom: 24px;
+            }
+  
+            .symbol{
+              font-size: 60px;
+              color: hsl(205, 78%, 60%);
+            }
+        }
+
+        }
+      }
+    }
+
+
+  }
+}
